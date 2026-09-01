@@ -1,42 +1,69 @@
+"use client";
+import { FaGithub, FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
+
+
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 p-6">
+    <section id="home" className="min-h-screen flex items-center px-4 sm:px-6 lg:px-20 pt-24 pb-20">
+      <div className="grid md:grid-cols-2 gap-12 w-full max-w-7xl mx-auto items-center">
+        
         
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Hi, I'm <span className="text-purple-400">Rhoda</span>
+          
+          <span className="text-sm px-4 py-1 rounded-full bg-gray-800 text-purple-400 font-medium">
+            Front End Developer
+          </span>
+
+          
+          <h1 className="text-5xl md:text-6xl font-bold mt-4 leading-tight">
+            Rhoda <span className="text-purple-400">Ogbole</span> 
           </h1>
 
-          <p className="mt-4 text-gray-400">
-            Entry-level software developer with experience in React, Next.js,
-            and building responsive applications.
+          
+          <p className="mt-4 text-gray-600 max-w-lg leading-relaxed">
+            I build modern, responsive and scalable web applications with React and Next.js and bring ideas to life on the web.
           </p>
 
-          <div className="mt-6 flex gap-4">
-            <a
-              href="/Rhoda_CV.pdf"
-              download
-              className="bg-purple-400 px-6 py-3 rounded-lg"
+          
+          <div className="flex gap-4 mt-6">
+            <a 
+              href="#projects" 
+              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition"
             >
-              Download CV
+              View My Work
             </a>
-
-            <a
-              href="#contact"
-              className="border border-purple-400 px-6 py-3 rounded-lg"
+            <a 
+              href="#contact" 
+              className="border border-gray-700 hover:border-purple-400 hover:text-purple-400 px-6 py-3 rounded-lg font-semibold transition"
             >
               Contact Me
             </a>
           </div>
-        </div>
 
-        <div className="flex justify-center">
-          <div className="w-64 h-64 rounded-full border-4 border-purple-400 overflow-hidden">
-            <img src="/images/profile.jpeg" alt="profile" />
+         
+          <div className="flex gap-5 mt-8 text-gray-400">
+            <a href="#"><FaGithub className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="#"><FaLinkedin className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="#"><FaInstagram className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="#"><FaXTwitter className="hover:text-purple-400 transition" size={20}/></a>
+  
           </div>
         </div>
+
+       
+        <div className="relative flex justify-center">
+          
+          <div className="rounded-2xl bg-gradient-to-br from-purple-600 to-pink-500 p-[3px]">
+            <img 
+              src="/images/profile.jpeg" 
+              alt="profile" 
+              className="rounded-2xl w-[350px] h-[400px] object-cover bg-gray-800" 
+            />
+          </div>
+
+        </div>
+
       </div>
     </section>
-  );
+  )
 }
