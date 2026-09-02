@@ -50,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <a href="mailto:rhodaogbole320@gmail.com" className="font-semibold hover:text-purple-400">
+                  <a href="mailto:rhodaogbole320@gmail.com" className="font-semibold text-white hover:text-purple-400">
                     rhodaogbole320@gmail.com
                   </a>
                 </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
-                  <p className="font-semibold">+234 800 000 0000</p>
+                  <p className="font-semibold text-white">+234 800 000 0000</p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
-                  <p className="font-semibold">Abuja, Nigeria</p>
+                  <p className="font-semibold text-white">Abuja, Nigeria</p>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function Contact() {
           </div>
 
           {/* RIGHT: Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-2xl border border-gray-800 space-y-5">
+          <form onSubmit={handleSubmit} className="bg-gray-900 p-8 text-gray-400 rounded-2xl border border-gray-800 space-y-5">
             <div>
               <label className="block text-sm font-medium mb-2">Your Name</label>
               <input 
@@ -143,7 +143,7 @@ export default function Contact() {
             <button 
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-gray-700 flex items-center justify-center gap-2 font-semibold px-6 py-3 rounded-lg transition"
+              className="w-full bg-purple-600 text-white hover:bg-purple-700 disabled:bg-gray-700 flex items-center justify-center gap-2 font-semibold px-6 py-3 rounded-lg transition"
             >
               {status === "loading" ? <Loader2 className="animate-spin" size={18} /> : <Send size={18} />}
               {status === "loading" ? "Sending..." : "Send Message"}

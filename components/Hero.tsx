@@ -10,7 +10,7 @@ export default function Hero() {
         
         <div>
           
-          <span className="text-sm px-4 py-1 rounded-full bg-gray-800  font-medium">
+          <span className="text-sm text-white px-4 py-1 rounded-full bg-gray-800 text-purple-400 font-medium">
             Front End Developer
           </span>
 

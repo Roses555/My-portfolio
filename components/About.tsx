@@ -60,7 +60,7 @@ export default function About() {
         {experiences.map((exp) => (
           <div 
             key={exp.company} 
-            className="bg-gray-800 p-6 rounded-xl border-gray-700 hover:border-purple-500 hover:scale-[1.02] transition"
+            className="bg-gray-800 text-white p-6 rounded-xl border-gray-700 hover:border-purple-500 hover:scale-[1.02] transition"
           >
             <div className="flex justify-between items-start mb-2">
               <h4 className="text-xl font-bold">{exp.role}</h4>

@@ -16,7 +16,7 @@ export default function Skills() {
       <h2 className="text-3xl font-bold text-center mb-4">Technologies I work with</h2>
       <p className=" text-center mb-12">The tools and technologies I use to bring products to life</p>
 
-      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+      <div className="grid grid-cols-2 text-white md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
         {skills.map((skill) => (
           <div
             key={skill.name}

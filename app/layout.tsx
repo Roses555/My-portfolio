@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-white text-gray-900 dark:bg-[#0a0a0a] dark:text-white transition-colors duration-300`}>
+      <body className={`${inter.className} bg-white text-gray-900 dark:bg-[#03030a] dark:text-white transition-colors duration-300`}>
         
         {/* 1. GRADIENT OVERLAY - CODE IT ONCE HERE */}
         <div className="fixed inset-0 -z-10 hidden dark:block">
@@ -28,7 +28,7 @@ export default function RootLayout({
           {/* Center glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-500/10 rounded-full blur-[200px]" />
         </div>
-        <ThemeProvider attribute = "class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute = "class" defaultTheme="system" enableSystem>
            <main>{children}</main>
 
         </ThemeProvider>

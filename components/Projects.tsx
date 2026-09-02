@@ -8,7 +8,7 @@ const projects = [
     title: "Her Recruit: Job Recruitment Platform",
     desc: "A job recruitment web platform that bridges the gap between talent and employers through streamlined job matching.",
     image: "/images/HerRecruit.png", 
-    liveUrl: "https://her-recruit.com",
+    liveUrl: "https://herrecruit.netlify.app/",
     githubUrl: "https://github.com/yourusername/her-recruit",
     tech: ["React", "Node.js", "Tailwind"]
   },
@@ -36,16 +36,14 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-10">
           <h2 className="text-3xl font-bold">Featured Projects</h2>
-          <Link href="/projects" className="text-sm text-gray-400 hover:text-purple-400">
-            View All Projects
-          </Link>
+         
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div 
               key={project.title} 
-              className="group bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300"
+              className="group text-purple-400 bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300"
             >
               {/* Image */}
               <div className="relative w-full h-60 overflow-hidden">
@@ -53,7 +51,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover text-white group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
