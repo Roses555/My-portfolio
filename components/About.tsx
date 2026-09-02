@@ -29,11 +29,11 @@ export default function About() {
       <div className="grid lg:grid-cols-3 gap-10">
         {/* Left: Text + Button */}
         <div className="lg:col-span-2">
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className=" leading-relaxed mb-6">
             I'm Rhoda, a frontend developer with a foundation in Python, JavaScript, and TypeScript, and hands-on experience building responsive web applications.
             I specialize in React, Next.js, and Tailwind CSS and I love turning ideas into clean, user-friendly interfaces.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="leading-relaxed mb-6">
             I'm passionate about creating accessible, performant, and beautiful web experiences that solve real problems.
           </p>
           <a 
@@ -67,7 +67,7 @@ export default function About() {
               <span className="text-sm bg-purple-600 px-3 py-1 rounded-full">{exp.year}</span>
             </div>
             <p className="text-purple-400 font-medium mb-3">{exp.company}</p>
-            <p className="text-gray-400">{exp.desc}</p>
+            <p >{exp.desc}</p>
           </div>
         ))}
       </div>

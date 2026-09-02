@@ -22,14 +22,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link 
           href="/" 
-          className="flex items-center gap-2 text-white"
+          className="flex items-center gap-2"
           onClick={() => setMobileMenuOpen(false)}
         >
-          <h1 className="text-primary text-white font-bold text-xl">Rhoda</h1>
+          <h1 className="text-primary font-bold text-xl">Rhoda</h1>
         </Link>
 
         {/* Desktop Nav - hidden on mobile */}
-        <div className="hidden md:flex gap-6 text-white items-center">
+        <div className="hidden md:flex gap-6 items-center">
           {navlinks.map((link) => (
             <a 
               key={link.name} 

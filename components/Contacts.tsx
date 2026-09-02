@@ -35,7 +35,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto">
         
         <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
-        <p className="text-gray-400 mb-12">
+        <p className=" mb-12">
           Have a project in mind or want to collaborate? Feel free to reach out!
         </p>
 

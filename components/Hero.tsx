@@ -10,17 +10,17 @@ export default function Hero() {
         
         <div>
           
-          <span className="text-sm px-4 py-1 rounded-full bg-gray-800 text-purple-400 font-medium">
+          <span className="text-sm px-4 py-1 rounded-full bg-gray-800  font-medium">
             Front End Developer
           </span>
 
           
           <h1 className="text-5xl md:text-6xl font-bold mt-4 leading-tight">
-            Rhoda <span className="text-purple-400">Ogbole</span> 
+            Rhoda <span className="text-purple-600">Ogbole</span> 
           </h1>
 
           
-          <p className="mt-4 text-gray-600 max-w-lg leading-relaxed">
+          <p className="mt-4 max-w-lg leading-relaxed">
             I build modern, responsive and scalable web applications with React and Next.js and bring ideas to life on the web.
           </p>
 
@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
 
          
-          <div className="flex gap-5 mt-8 text-gray-400">
+          <div className="flex gap-5 mt-8 ">
             <a href="#"><FaGithub className="hover:text-purple-400 transition" size={20}/></a>
             <a href="#"><FaLinkedin className="hover:text-purple-400 transition" size={20}/></a>
             <a href="#"><FaInstagram className="hover:text-purple-400 transition" size={20}/></a>
