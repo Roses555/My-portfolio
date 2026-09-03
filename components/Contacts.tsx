@@ -1,4 +1,4 @@
-"use client"; // Important for handling form state
+"use client";
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send, Loader2, CheckCircle } from "lucide-react";
 import { FaGithub, FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
@@ -7,14 +7,14 @@ import { FaGithub, FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
     const form = e.currentTarget;
     const data = new FormData(form);
 
     // REPLACE THIS URL with your Formspree URL
-    const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+    const response = await fetch("https://formspree.io/f/mvkoryel", {
       method: "POST",
       body: data,
       headers: {
@@ -57,17 +57,6 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-purple-600 rounded-lg">
-                  <Phone size={20} />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-400">Phone</p>
-                  <p className="font-semibold text-white">+234 800 000 0000</p>
-                </div>
-              </div>
-            </div>
 
             <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
               <div className="flex items-center gap-4">
@@ -82,13 +71,13 @@ export default function Contact() {
             </div>
 
             <div className="flex gap-4 pt-4">
-              <a href="https://github.com" target="_blank" className="p-3 bg-gray-900 rounded-lg hover:bg-purple-600 transition">
+              <a href="https://github.com/Roses555" target="_blank" className="p-3  hover:text-purple-500 transition">
                 <FaGithub size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" className="p-3 bg-gray-900 rounded-lg hover:bg-purple-600 transition">
+              <a href="https://www.linkedin.com/in/rhoda-ogbole-6054082ba/" target="_blank" className="p-3 hover:text-purple-500 transition">
                 <FaLinkedin size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" className="p-3 bg-gray-900 rounded-lg hover:bg-purple-600 transition">
+              <a href="https://x.com/TheLioness_RP" target="_blank" className="p-3 hover:text-purple-500 transition">
                 <FaXTwitter size={20} />
               </a>
             </div>

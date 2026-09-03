@@ -9,24 +9,24 @@ const projects = [
     desc: "A job recruitment web platform that bridges the gap between talent and employers through streamlined job matching.",
     image: "/images/HerRecruit.png", 
     liveUrl: "https://herrecruit.netlify.app/",
-    githubUrl: "https://github.com/yourusername/her-recruit",
+    githubUrl: "https://github.com/ekekasiemobi/recruitment",
     tech: ["React", "Node.js", "Tailwind"]
   },
   {
     title: "Weather App",
     desc: "An interactive weather app that pulls real-time data from a public API and displays it through a clean UI.",
-    image: "/images/weather-app.png",
-    liveUrl: "https://weather-app.com",
-    githubUrl: "https://github.com/yourusername/weather-app",
+    image: "/images/weatherApp.png",
+    liveUrl: "https://weatherlp.netlify.app/",
+    githubUrl: "https://github.com/Roses555/Weather-app",
     tech: ["React", "API", "tailwind"]
   },
   {
-    title: "E-commerce Landing Page",
-    desc: "A responsive landing page built for an online shopping concept, designed to give visitors a clear product overview.",
-    image: "/images/ecommerce.png",
-    liveUrl: "https://ecommerce.com",
-    githubUrl: "https://github.com/yourusername/ecommerce",
-    tech: ["Next.js", "Tailwind", "Framer"]
+    title: "Rhoda Ogbole | Front End Developer",
+    desc: "A responsive Personal portfolio built to display my skills and experiences.",
+    image: "/images/portfolio.png",
+    liveUrl: "https://rhodaogbole.netlify.app/",
+    githubUrl: "https://github.com/Roses555/My-portfolio",
+    tech: ["Next.js", "Tailwind", "Typescript"]
   },
 ];
 

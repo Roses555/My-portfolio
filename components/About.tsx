@@ -46,7 +46,7 @@ export default function About() {
         </div>
 
         {/* Right: Info Card */}
-        <div className="bg-gray-800 p-6 rounded-xl space-y-4 h-fit">
+        <div className="bg-gray-800 p-6 text-white rounded-xl space-y-4 h-fit">
           <div className="flex items-center gap-3"><User size={18} className="text-purple-400"/> <span>Name: Rhoda Ogbode</span></div>
           <div className="flex items-center gap-3"><Mail size={18} className="text-purple-400"/> <span>Email: rhoda@gmail.com</span></div>
           <div className="flex items-center gap-3"><MapPin size={18} className="text-purple-400"/> <span>Location: Nigeria</span></div>

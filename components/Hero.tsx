@@ -42,10 +42,10 @@ export default function Hero() {
 
          
           <div className="flex gap-5 mt-8 ">
-            <a href="#"><FaGithub className="hover:text-purple-400 transition" size={20}/></a>
-            <a href="#"><FaLinkedin className="hover:text-purple-400 transition" size={20}/></a>
-            <a href="#"><FaInstagram className="hover:text-purple-400 transition" size={20}/></a>
-            <a href="#"><FaXTwitter className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="https://github.com/Roses555"><FaGithub className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="https://www.linkedin.com/in/rhoda-ogbole-6054082ba/"><FaLinkedin className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="https://www.instagram.com/_thelioness_rp/"><FaInstagram className="hover:text-purple-400 transition" size={20}/></a>
+            <a href="https://x.com/TheLioness_RP"><FaXTwitter className="hover:text-purple-400 transition" size={20}/></a>
   
           </div>
         </div>
