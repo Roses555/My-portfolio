@@ -12,3 +12,8 @@ body {
 .dark body {
   @apply bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white;
 }
+.portfolio-frame {
+  width: min(80rem, 90%);
+  margin-inline:auto;
+  padding-block: clamp(2rem, 5vw, 6rem);
+}

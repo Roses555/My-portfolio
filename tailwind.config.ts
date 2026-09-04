@@ -13,6 +13,9 @@ const config: Config = {
         darkBg: "#0B0F1A",
         card: "#111827",
       },
+      fontSize: {
+        "fluid-5xl": ["clamp(2.5rem, 8vw, 5rem)", {lineHeight: "1.1"}],
+      }
     },
   },
   plugins: [],

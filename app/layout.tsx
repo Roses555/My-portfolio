@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-white text-gray-900 dark:bg-[#030713] dark:text-white transition-colors duration-300`}>
-        
-        {/* 1. GRADIENT OVERLAY - CODE IT ONCE HERE */}
+        <Navbar/>
+
+        <div className="portfolio-frame">
+          
+          {/* 1. GRADIENT OVERLAY - CODE IT ONCE HERE */}
         <div className="fixed inset-0 -z-10 hidden dark:block">
           {/* Purple glow top left */}
           <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-900/20 rounded-full blur-[150px]" />
@@ -32,6 +37,10 @@ export default function RootLayout({
            <main>{children}</main>
 
         </ThemeProvider>
+        <Footer/>
+        </div>
+        
+        
 
         
        

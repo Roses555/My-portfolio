@@ -37,7 +37,7 @@ export default function About() {
             I'm passionate about creating accessible, performant, and beautiful web experiences that solve real problems.
           </p>
           <a 
-            href="/Rhoda_CV.pdf" 
+            href="https://docs.google.com/document/d/1EUX0O1tQzvrJlAirfWhxK4qcNABB4S_o/edit?usp=drivesdk&ouid=108370596433170657048&rtpof=true&sd=true" 
             download 
             className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition"
           >
@@ -55,7 +55,7 @@ export default function About() {
       </div>
 
       {/* Experience Section */}
-      <h3 className="text-2xl font-semibold mt-20 mb-6">Experience</h3>
+      <h3 className="text-3xl font-bold mt-20 mb-6">Experience</h3>
       <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
         {experiences.map((exp) => (
           <div 
